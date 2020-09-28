@@ -13,7 +13,7 @@ module ngrams
             if length(tokens) < 1
                 println("empty string is not valid")
             else
-                for i in 0:(length(tokens)-n+1):
+                for i in 0:(length(tokens)-n+1)
                     gram = join(tokens[i:i+n], " ")
                     if gram in bucket
                         bucket[gram] += 1
